@@ -16,7 +16,7 @@
             flex-direction: column;
             flex: 1;
             margin-top: -2rem;
-
+            min-height: 100vh;
         }
 
         .container {
@@ -26,8 +26,35 @@
             flex-direction: column;
             align-items: left;
             justify-content: left;
-            padding: 1rem;
-            padding-top: -1rem;
+            padding: 0.5rem;
+            transform-origin: top left;
+            margin-bottom: -1rem;
+        }
+
+        /* Default scaling and margin reduction for containers */
+        .container:nth-of-type(1) {
+            transform: scale(1);
+            margin-bottom: 0rem;
+        }
+
+        .container:nth-of-type(2) {
+            transform: scale(0.45);
+            margin-bottom: -13rem;
+        }
+
+        .container:nth-of-type(3) {
+            transform: scale(0.22);
+            margin-bottom: -19rem;
+        }
+
+        .container:nth-of-type(4) {
+            transform: scale(0.0625);
+            margin-bottom: -21.5rem;
+        }
+
+        .container:nth-of-type(5) {
+            transform: scale(0.0225);
+            margin-bottom: -50rem;
         }
 
         .content {
@@ -38,44 +65,38 @@
         .toxe {
             font-size: 10rem;
             font-weight: bold;
-            margin-bottom: -3rem;
-
+            margin-bottom: -2.5rem;
         }
+
         .cedric {
             font-size: 2.9rem;
             font-weight: bold;
-            margin-bottom: -.87rem;
-
+            margin-bottom: -.5rem;
         }
 
         .cure {
             font-size: 1.9rem;
             font-weight: bold;
-            margin-bottom: -.5rem;
-
+            margin-bottom: 0rem;
         }
 
         .date {
             font-size: 1.3rem;
             font-weight: bold;
-            margin-bottom: -.2rem;
+            margin-bottom: 0rem;
         }
 
         .venue {
-            font-size: .9rem;
+            font-size: 0.9rem;
             font-weight: bold;
-            margin-bottom: -.1rem;
-            ;
-
+            margin-bottom: 0.05rem;
         }
 
         .time {
             font-size: 0.7rem;
             font-weight: bold;
-            margin-bottom: -.1rem;
-
+            margin-bottom: 0rem;
         }
-
 
         .button {
             background-color: black;
@@ -86,352 +107,26 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: .5rem;
+            margin-top: 0.4rem;
             transition: background-color 0.3s;
         }
+
         .button:hover {
             background-color: #333;
         }
-        .container {
+
+        /* Footer that sticks to the bottom */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.6rem;
+            text-align: center;
+            width: 100%;
             background-color: white;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: left;
-            padding: 1rem;
+            padding: 0.5rem 0;
         }
-
-        .content1 {
-            width: 100%;
-            text-align: left;
-        }
-
-        .toxe1 {
-            font-size: 5.5rem;
-            font-weight: bold;
-            margin-bottom: -1.5rem;
-            margin-top: -2.6rem;
-
-        }
-        .cedric1 {
-            font-size: 1.7rem;
-            font-weight: bold;
-            margin-bottom: -.2rem;
-        }
-
-        .cure1 {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: ;
-
-        }
-
-        .date1 {
-            font-size: .9rem;
-            font-weight: bold;
-            margin-bottom: ;
-        }
-
-        .venue1 {
-            font-size: .6rem;
-            font-weight: bold;
-            margin-bottom: ;
-            ;
-
-        }
-
-        .time1 {
-            font-size: 0.4rem;
-            font-weight: bold;
-            margin-bottom:;
-
-        }
-
-
-        .button1 {
-            background-color: black;
-            color: white;
-            font-size: .5rem;
-            padding: .8rem 1.4rem;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: .5rem;
-            transition: background-color 0.3s;
-        }
-        .button1:hover {
-            background-color: #333;
-        }
-        
-        .content1 {
-            width: 100%;
-            text-align: left;
-        }
-
-        .toxe2 {
-            font-size: 2.8rem;
-            font-weight: bold;
-            margin-bottom: -1rem;
-            margin-top: -1.3rem;
-
-        }
-        .cedric2 {
-            font-size: .87rem;
-            font-weight: bold;
-            margin-bottom: -.2rem;
-        }
-
-        .cure2 {
-            font-size: .5rem;
-            font-weight: bold;
-            margin-bottom: ;
-
-        }
-
-        .date2 {
-            font-size: .4rem;
-            font-weight: bold;
-            margin-bottom: ;
-        }
-
-        .venue2 {
-            font-size: .3rem;
-            font-weight: bold;
-            margin-bottom: ;
-            ;
-
-        }
-
-        .time2 {
-            font-size: 0.26rem;
-            font-weight: bold;
-            margin-bottom:;
-
-        }
-
-
-        .button2 {
-            background-color: black;
-            color: white;
-            font-size: .3rem;
-            padding: .7rem 1rem;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: .5rem;
-            transition: background-color 0.3s;
-        }
-        .button2:hover {
-            background-color: #333;
-        }
-        
-        .content2 {
-            width: 100%;
-            text-align: left;
-            margin-left: -1rem;
-        }
-        .toxe3 {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: -.44rem;
-            margin-top: -1.8rem;
-
-        }
-        .cedric3 {
-            font-size: .43rem;
-            font-weight: bold;
-            margin-bottom: -.1rem;
-        }
-
-        .cure3 {
-            font-size: .28rem;
-            font-weight: bold;
-            margin-bottom: ;
-
-        }
-
-        .date3 {
-            font-size: .21rem;
-            font-weight: bold;
-            margin-bottom: ;
-        }
-
-        .venue3 {
-            font-size: .18rem;
-            font-weight: bold;
-            margin-bottom: ;
-            ;
-
-        }
-
-        .time3 {
-            font-size: 0.17rem;
-            font-weight: bold;
-            margin-bottom: -1.2;
-
-        }
-
-
-        .button3 {
-            background-color: black;
-            color: white;
-            font-size: .17rem;
-            padding: .4rem .65rem;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: -.5rem;
-            transition: background-color 0.3s;
-        }
-        .button3:hover {
-            background-color: #333;
-        }
-        
-        .content3 {
-            width: 100%;
-            text-align: left;
-            margin-left: -1rem;
-        }
-
-        .toxe4 {
-            font-size: .5rem;
-            font-weight: bold;
-            margin-bottom: -.14rem;
-            margin-top: -1rem;
-
-        }
-        .cedric4 {
-            font-size: .141rem;
-            font-weight: bold;
-            margin-bottom: -.04rem;
-        }
-
-        .cure4 {
-            font-size: .07rem;
-            font-weight: bold;
-            margin-bottom: ;
-
-        }
-
-        .date4 {
-            font-size: .06rem;
-            font-weight: bold;
-            margin-bottom: ;
-        }
-
-        .venue4 {
-            font-size: .07rem;
-            font-weight: bold;
-            margin-bottom: ;
-            ;
-
-        }
-
-        .time4 {
-            font-size: 0.06rem;
-            font-weight: bold;
-            margin-bottom: -.7rem;
-
-        }
-
-
-        .button4 {
-            background-color: black;
-            color: white;
-            font-size: .12rem;
-            padding: .01rem .03rem;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-            padding-top: -2rem;
-        }
-     
-        .button4:hover {
-            background-color: #333;
-        }
-        
-        .content4 {
-            width: 100%;
-            text-align: left;
-            margin-left: -2rem;
-        }
-        .toxe5 {
-            font-size: .09rem;
-            font-weight: bold;
-            margin-bottom: -.014rem;
-            margin-top: -1rem;
-
-        }
-        .cedric5 {
-            font-size: .041rem;
-            font-weight: bold;
-            margin-bottom: -.004rem;
-        }
-
-        .cure5 {
-            font-size: .04rem;
-            font-weight: bold;
-            margin-bottom: ;
-
-        }
-
-        .date5 {
-            font-size: .036rem;
-            font-weight: bold;
-            margin-bottom: ;
-        }
-
-        .venue5 {
-            font-size: .033rem;
-            font-weight: bold;
-            margin-bottom: ;
-            ;
-
-        }
-
-        .time5 {
-            font-size: 0.033rem;
-            font-weight: bold;
-            margin-bottom: -.851rem;
-
-        }
-
-
-        .button5 {
-            background-color: black;
-            color: white;
-            font-size: .04rem;
-            padding: .007rem .003rem;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-            padding-top: -2rem;
-        }
-     
-        .button5:hover {
-            background-color: #333;
-        }
-        
-        .content5 {
-            width: 100%;
-            text-align: left;
-            margin-left: -3rem;
-        }
-      #copy {
-        font-size: .6rem;
-        text-align: center;
-       
-      }
-        
-        
     </style>
 </head>
 <body class="fade-in" id="content">
@@ -446,80 +141,73 @@
             <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button" id="ticketButton">Get Tickets</a>
         </div>
     </div>
+
+    <!-- Repeated elements -->
+
     <div class="container">
-        <div class="content1">
-            <div class="toxe1"><strong>TOXE</strong></div>
-            <div class="cedric1"><strong>CEDRIC MADDEN</strong></div>
-            <div class="cure1"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
-            <div class="date1"><strong>FRIDAY OCTOBER 18TH</strong></div>
-            <div class="venue1"><strong>CABARET BERLIN</strong></div>
-            <div class="time1"><strong>10:00PM-3:00AM</strong></div>
-            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button1" id="ticketButton">Get Tickets</a>
+        <div class="content">
+            <div class="toxe"><strong>TOXE</strong></div>
+            <div class="cedric"><strong>CEDRIC MADDEN</strong></div>
+            <div class="cure"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
+            <div class="date"><strong>FRIDAY OCTOBER 18TH</strong></div>
+            <div class="venue"><strong>CABARET BERLIN</strong></div>
+            <div class="time"><strong>10:00PM-3:00AM</strong></div>
+            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button" id="ticketButton">Get Tickets</a>
         </div>
-        <div class="container">
-            <div class="content2">
-                <div class="toxe2"><strong>TOXE</strong></div>
-                <div class="cedric2"><strong>CEDRIC MADDEN</strong></div>
-                <div class="cure2"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
-                <div class="date2"><strong>FRIDAY OCTOBER 18TH</strong></div>
-                <div class="venue2"><strong>CABARET BERLIN</strong></div>
-                <div class="time2"><strong>10:00PM-3:00AM</strong></div>
-                <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button2" id="ticketButton">Get Tickets</a>
-            </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="toxe"><strong>TOXE</strong></div>
+            <div class="cedric"><strong>CEDRIC MADDEN</strong></div>
+            <div class="cure"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
+            <div class="date"><strong>FRIDAY OCTOBER 18TH</strong></div>
+            <div class="venue"><strong>CABARET BERLIN</strong></div>
+            <div class="time"><strong>10:00PM-3:00AM</strong></div>
+            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button" id="ticketButton">Get Tickets</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="toxe"><strong>TOXE</strong></div>
+            <div class="cedric"><strong>CEDRIC MADDEN</strong></div>
+            <div class="cure"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
+            <div class="date"><strong>FRIDAY OCTOBER 18TH</strong></div>
+            <div class="venue"><strong>CABARET BERLIN</strong></div>
+            <div class="time"><strong>10:00PM-3:00AM</strong></div>
+            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button" id="ticketButton">Get Tickets</a>
+        </div>
     </div>
     <div class="container">
-        <div class="content3">
-            <div class="toxe3"><strong>TOXE</strong></div>
-            <div class="cedric3"><strong>CEDRIC MADDEN</strong></div>
-            <div class="cure3"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
-            <div class="date3"><strong>FRIDAY OCTOBER 18TH</strong></div>
-            <div class="venue3"><strong>CABARET BERLIN</strong></div>
-            <div class="time3"><strong>10:00PM-3:00AM</strong></div>
-            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button3" id="ticketButton">Get Tickets</a>
+        <div class="content">
+            <div class="toxe"><strong>TOXE</strong></div>
+            <div class="cedric"><strong>CEDRIC MADDEN</strong></div>
+            <div class="cure"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
+            <div class="date"><strong>FRIDAY OCTOBER 18TH</strong></div>
+            <div class="venue"><strong>CABARET BERLIN</strong></div>
+            <div class="time"><strong>10:00PM-3:00AM</strong></div>
+            <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button" id="ticketButton">Get Tickets</a>
         </div>
-        <div class="container">
-            <div class="content4">
-                <div class="toxe4"><strong>TOXE</strong></div>
-                <div class="cedric4"><strong>CEDRIC MADDEN</strong></div>
-                <div class="cure4"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
-                <div class="date4"><strong>FRIDAY OCTOBER 18TH</strong></div>
-                <div class="venue4"><strong>CABARET BERLIN</strong></div>
-                <div class="time4"><strong>10:00PM-3:00AM</strong></div>
-                <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button4" id="ticketButton3">Get Tickets</a>
-            </div>
-            <div class="container">
-                <div class="content5">
-                    <div class="toxe5"><strong>TOXE</strong></div>
-                    <div class="cedric5"><strong>CEDRIC MADDEN</strong></div>
-                    <div class="cure5"><strong>SEREN REALM + CURE<sup style="font-size: 0.6em;">DJs</sup></strong></div>
-                    <div class="date5"><strong>FRIDAY OCTOBER 18TH</strong></div>
-                    <div class="venue5"><strong>CABARET BERLIN</strong></div>
-                    <div class="time5"><strong>10:00PM-3:00AM</strong></div>
-                    <a href="https://ra.co/events/2007602?sharedId=entity&subId1=&subId3=5fsqj8XHJJ4VDFPLyMhWoC&partnerId=residentadvisor" class="button5" id="ticketButton3">Get Tickets</a>
-                </div>
-               
-           
-</div>
+    </div>
+
+    
+
+    <footer>
+        Cure005 ©
+    </footer>
 
     <script>
         window.onload = function() {
             const content = document.getElementById('content');
             content.style.opacity = 1; // Trigger the fade-in effect
-            };
+        };
 
         document.addEventListener('DOMContentLoaded', function() {
             var ticketButton = document.getElementById('ticketButton');
             ticketButton.addEventListener('click', function(event) {
                 event.preventDefault();
-                // You can add analytics or other functionality here before navigation
                 window.location.href = this.href;
             });
         });
-        
-        
-        
-            
-        
     </script>
-</body>
-</html>
