@@ -10,7 +10,7 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 **Tech used:** HTML, CSS, JavaScript
 
-This webppage utilizes simple HTML with inline CSS and Javascript to create a minimalist design. 
+This webppage utilizes simple HTML with inline CSS and Javascript to create a minimalist repeated design. 
 
 
 ## Lessons Learned:
