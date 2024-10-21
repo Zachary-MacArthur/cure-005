@@ -3,7 +3,8 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 **Link to project:** https://cure-005.netlify.app/
 
-![screenshot](docs\Screenshot 2024-10-21 154936.png)
+![Screenshot 2024-10-21 154936](https://github.com/user-attachments/assets/e58eed31-ae15-4ddd-9c0c-53e90f3826c3)
+
 
 ## How It's Made:
 
